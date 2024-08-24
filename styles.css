@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 125; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -139,7 +139,8 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 0%;
+  
 }
 
 .section--title {
@@ -372,7 +373,8 @@ img {
 
 /*==================== ABOUT ====================*/
 .about--img {
-  width: 200px;
+  height: 100%;
+  width: 100%;
   border-radius: 1rem;
   justify-self: center;
   align-self: center;
@@ -481,20 +483,20 @@ img {
   background-color: var(--first-color);
 }
 
-.skills--html {
+.skills--linux {
   width: 75%;
 }
 
-.skills--css {
+.skills--git {
+  width: 75%;
+}
+
+.skills--k8s {
   width: 65%;
 }
 
-.skills--js {
-  width: 50%;
-}
-
-.skills--react {
-  width: 20%;
+.skills--terraform {
+  width: 70%;
 }
 
 .skills--sql {
@@ -502,22 +504,22 @@ img {
 }
 
 .skills--python {
+  width: 55%;
+}
+
+.skills--bash {
   width: 45%;
 }
 
-.skills--node {
-  width: 10%;
+.skills--javascript {
+  width: 30%;
 }
 
-.skills--java {
-  width: 10%;
+.skills--snowflake {
+  width: 55%;
 }
 
-.skills--figma {
-  width: 40%;
-}
-
-.skills--photoshop {
+.skills--databricks {
   width: 25%;
 }
 
@@ -1116,12 +1118,10 @@ img {
     padding: 3rem 0 3.5rem;
   }
   .footer--links{
-    flex-direction: row;
+    flex-direction: column;
     column-gap: 2rem;
   }
-  .footer--social{
-    justify-self: flex-end;
-  }
+  
   .footer--copy{
     margin-top: 4.5rem;
   }
