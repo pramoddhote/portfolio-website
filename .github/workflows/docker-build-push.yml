@@ -28,9 +28,9 @@ jobs:
       # Step 4: Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -f dockerfile -t ${{ secrets.DOCKER_IMAGE }} .
+          docker build -f dockerfile -t ${{ secrets.DOCKER_IMAGE }}:latest .
 
       # Step 5: Push Docker image to Docker Hub
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_IMAGE }}
+          docker push ${{ secrets.DOCKER_IMAGE }}:latest
